@@ -1,0 +1,13 @@
+# Fixed parameters for OLG model
+'mu': 3                                          # Mean of technology process -- Consistent with Blanchard (2019)
+'sigma':  0.2                                    # Standard deviation of technology process -- Consistent with Blanchard (2019)
+'b': 1/3                                         # Capital share of output in Cobb-Douglass production function -- Consistent with Blanchared (2019)
+'transfer_to_capital_ratio': 0.2                 # Transfer as a share of steady-state capital -- Consistent with Blanchard (2019)
+'n': 10000                                       # Number of generations in a simulation
+'generation_length': 25                          # Generation length, in years -- Consistent with Blanchard (2019)
+'transition_length': 100                         # Assumed number of generations before reaching steady state -- Consistent with Blanchard (2019)
+'hermgauss_degree': 100                          # Number of values and weights used in Gauss-Hermite quadrature, used in approximation of utility functions
+'seed': 20220301                                 # Random number seed used in generation of technology shocks vector
+'output_precision': 4                            # Number of decimal places to round to in model output
+'rho_values': !!python/tuple [0.0, 0.9]          # Level of persistence (autocorrelation) in technology process
+'chi_values': !!python/tuple [1, 10]             # Aversion to the risk that a generation will be born into a lifetime of low consumption
